@@ -156,7 +156,11 @@ img {
 
   .navegation__link {
     color: var(--primary);
-  } 
+  }
+
+  .navegation__link--white {
+    color: var(--white);
+  }
   
   @media screen and (width >= 768px) {
     .navegation {
@@ -383,3 +387,27 @@ img {
     color: var(--primary);
   }
 
+/* Footer */
+  footer {
+    padding: 3rem 0;
+
+    background-color: #5A30A0;
+  }
+
+  .footer__grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .footer__logo {
+    width: 20rem;
+  }
+  
+  @media screen and (width >= 768px) {
+    .footer__grid {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
