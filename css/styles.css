@@ -322,5 +322,64 @@ img {
     }
   }
 
+/* Testimonials */
 
+  .testimonials {
+    padding: 5rem 0;
+
+    background-color: var(--primary);
+  }
+
+  .testimonials__heading {
+    color: var(--white);
+  }
+
+  .testimonials__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  @media screen and (width >= 768px) {
+    .testimonials__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .testimonial__card {
+    padding: 2rem;
+
+    background-color: var(--white);
+    box-shadow: 0 0 1.5rem 0.3rem rgb(0 0 0 / .15);
+  }
+
+  .testimonial__text {
+    position: relative;
+    padding-left: 4rem;
+  }
+
+  .testimonial__text::before {
+    content: "";
+
+    width: 3rem;
+    height: 3rem;
+
+    display: block;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-image: url("../img/comilla.png");
+    background-size: 3rem;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .testimonials__author {
+    font-weight: 700;
+
+    text-align: right;
+    color: var(--primary);
+  }
 
