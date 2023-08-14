@@ -204,11 +204,21 @@ img {
     background-color: var(--white);
     box-shadow: 0 0 1.5rem 0.3rem rgb(0 0 0 / .15);
   }
-  
+
   .list__heading {
     margin: 0;
 
     font-size: 3rem;
+    color: var(--primary);
+  }
+
+  .list__number {
+    margin: 0;
+
+    font-size: 6rem;
+    font-weight: 900;
+
+    text-align: center;
     color: var(--primary);
   }
 
@@ -221,8 +231,22 @@ img {
       transition: transform 300ms;
     }
 
+    .list__element--2cols {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
     .list__element:hover { 
       transform: scale(1.05);
+    }
+
+    .list__number {
+      flex-basis: 20rem;
+
+      font-size: 4rem;
+
+      text-align: right;
     }
   }
 
@@ -270,3 +294,33 @@ img {
       column-gap: 5rem;
     }
   }
+
+/* Commissions */
+  .commissions__text {
+    font-size: 2.4rem;
+    font-weight: 700;
+
+    text-align: center;
+  }
+
+  @media screen and (width >= 768px) {
+    .commissions__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 5rem;
+      align-items: flex-end;
+    }
+
+    .commissions__text {
+      text-align: left;
+    }
+  }
+
+  @media screen and (width >= 998px) {
+    .commissions__grid {
+      align-items: center;
+    }
+  }
+
+
+
